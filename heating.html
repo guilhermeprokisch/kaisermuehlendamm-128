@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kaisermühlendamm 128 Heating</title>
+<style>
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+
+/* Layout: a plain single-column notice — headings, short paragraphs, simple tables. */
+:root {
+  --bg: #ffffff; --fg: #1d1f1e; --muted: #5f6662; --line: #dde1df; --soft: #f3f5f4;
+  --accent: #1f5f8b; --up: #a1460f; --down: #2c6e3a;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #151716; --fg: #e6e9e7; --muted: #a0a8a4; --line: #303533; --soft: #1e2220;
+    --accent: #7fb6dd; --up: #f0a06a; --down: #8ccf97; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #151716; --fg: #e6e9e7; --muted: #a0a8a4; --line: #303533; --soft: #1e2220;
+  --accent: #7fb6dd; --up: #f0a06a; --down: #8ccf97; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; padding-inline: 16px; padding-block: 24px 56px; }
+main { max-width: 760px; margin: 0 auto; display: grid; gap: 32px; }
+section { display: grid; gap: 10px; }
+h1 { font-size: 28px; line-height: 1.2; margin: 0; text-wrap: balance; }
+h2 { font-size: 20px; margin: 0; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+p, ul { margin: 0; }
+ul { padding-left: 20px; display: grid; gap: 4px; }
+.muted { color: var(--muted); font-size: 14px; }
+.de { color: var(--muted); }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.n, .num { font-variant-numeric: tabular-nums; }
+.box { background: var(--soft); border-radius: 6px; padding: 12px 14px; display: grid; gap: 6px; }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; min-width: 680px; font-size: 15px; }
+th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 13px; color: var(--muted); font-weight: 600; }
+td.n, th.n { text-align: right; white-space: nowrap; }
+tfoot td { font-weight: 700; border-bottom: 0; border-top: 2px solid var(--fg); }
+td small { display: block; color: var(--muted); }
+.up { color: var(--up); font-weight: 600; }
+.down { color: var(--down); font-weight: 600; }
+label { font-weight: 600; }
+input { font: inherit; width: 6.5em; padding: 4px 6px; margin-inline: 6px; border: 1px solid var(--muted); border-radius: 4px; background: var(--bg); color: var(--fg); }
+pre { margin: 0; white-space: pre-wrap; font: 14px/1.5 ui-monospace, Menlo, Consolas, monospace; background: var(--soft); padding: 10px 12px; border-radius: 4px; }
+button { font: inherit; justify-self: start; padding: 6px 12px; border-radius: 4px; border: 1px solid var(--accent); background: var(--accent); color: var(--bg); cursor: pointer; }
+
+</style>
+</head>
+<body>
+<main>
+
+<header style="display:grid;gap:8px">
+  <p><a href="index.html">← Building costs</a></p>
+  <h1>Kaisermühlendamm 128: too warm in the flats</h1>
+  <p>Many flats in our building are very warm this heating season, and the flats have no room thermostats. A neighbour started this to find out whether it is the whole building and to ask ÖRAG to check the heating system.</p>
+  <p class="muted">A residents' initiative, not an official ÖRAG page. Updated 11.10.2026.</p>
+</header>
+
+<section>
+  <h2>Temperature poll (54 flats, about 19% of all units)</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Answer</th><th class="n">Flats</th><th class="n">Share</th></tr></thead>
+    <tbody id="poll"></tbody>
+  </table></div>
+  <ul>
+    <li><b class="num">69%</b> are over 25 °C or find it too warm.</li>
+    <li><b class="num">87%</b> are at 23 °C or more.</li>
+    <li>Nobody said the temperature is fine.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>What the standards say</h2>
+  <ul>
+    <li>Heating systems are designed for <b>20 °C</b> in living rooms (ÖNORM EN 12831).</li>
+    <li>The European comfort standard EN 16798-1 accepts <b>20–25 °C</b> in winter.</li>
+    <li>For bedrooms, <b>18–20 °C</b> is the usual advice.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Reported to ÖRAG</h2>
+  <p>Service request 182177, since 08.10.2026. The poll results were added on 11.10.2026. <b>No answer yet.</b></p>
+  <p class="muted">The building was finished in 2023. Under Austrian law the warranty for defects in buildings is 3 years (§ 933 ABGB), so if the cause turns out to be in the construction, it should be raised within that period.</p>
+</section>
+
+<section>
+  <h2>How to help</h2>
+  <p>The more flats report it, the sooner ÖRAG has the system checked. Open <a href="https://oerag.idwell.com/requests" target="_blank" rel="noopener">oerag.idwell.com/requests</a> → "Servicemeldung erstellen" → Mängel → Einheit → Heizung / Klima / Lüftung → Fußbodenheizung, and paste this. Keep it short; the portal rejects long descriptions.</p>
+  <pre id="tpl">Titel: Wohnung zu warm, nicht regelbar
+
+Beschreibung: Meine Wohnung (Top [Nr.]) hat ca. [XX] °C, auch nachts. Es gibt keinen Raumthermostat, die Temperatur ist nicht regelbar. Bitte die Heizungsanlage des Gebäudes prüfen, siehe auch Servicemeldung 182177.</pre>
+  <button type="button" id="copy">Copy text</button>
+  <p class="muted">No portal account? Send it to immobilienverwaltung@oerag.at.</p>
+</section>
+
+<footer class="muted">Source: WhatsApp poll of the residents, 11.10.2026.</footer>
+
+</main>
+<script>
+const poll = [["Under 21 °C", 0], ["21–23 °C", 7], ["23–25 °C", 10], ["Over 25 °C", 22], ["Too warm, no thermometer", 15], ["Fine for me", 0]];
+document.getElementById("poll").innerHTML = poll.map(([l, v]) => `<tr><td>${l}</td><td class="n">${v}</td><td class="n">${Math.round(v / 54 * 100)}%</td></tr>`).join("");
+document.getElementById("copy").addEventListener("click", e => {
+  const btn = e.currentTarget, pre = document.getElementById("tpl");
+  navigator.clipboard.writeText(pre.textContent).then(() => { btn.textContent = "Copied"; setTimeout(() => btn.textContent = "Copy text", 2000); })
+    .catch(() => { const r = document.createRange(); r.selectNodeContents(pre); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = "Selected, press Ctrl/Cmd+C"; });
+});
+</script>
+</body>
+</html>
