@@ -60,19 +60,19 @@ button { font: inherit; justify-self: start; padding: 6px 12px; border-radius: 4
 <header style="display:grid;gap:8px">
   <p><a href="index.html">← Building costs</a></p>
   <h1>Kaisermühlendamm 128: too warm in the flats</h1>
-  <p>Many flats in our building are very warm this heating season, and the flats have no room thermostats. A neighbour started this to find out whether it is the whole building and to ask ÖRAG to check the heating system.</p>
-  <p class="muted">A residents' initiative, not an official ÖRAG page. Updated 11.10.2026.</p>
+  <p>Many flats in our building are very warm this heating season, even with the room thermostat (the Roth dial, 1–6) turned low. A neighbour started this to find out whether it is the whole building and to ask ÖRAG to check the heating system.</p>
+  <p class="muted">A residents' initiative, not an official ÖRAG page. Updated 13.10.2026.</p>
 </header>
 
 <section>
-  <h2>Temperature poll (54 flats, about 19% of all units)</h2>
+  <h2>Temperature poll (58 flats, about 20% of all units)</h2>
   <div class="scroll"><table>
     <thead><tr><th>Answer</th><th class="n">Flats</th><th class="n">Share</th></tr></thead>
     <tbody id="poll"></tbody>
   </table></div>
   <ul>
-    <li><b class="num">69%</b> are over 25 °C or find it too warm.</li>
-    <li><b class="num">87%</b> are at 23 °C or more.</li>
+    <li><b class="num">71%</b> are over 25 °C or find it too warm.</li>
+    <li><b class="num">88%</b> are at 23 °C or more, or find it too warm.</li>
     <li>Nobody said the temperature is fine.</li>
   </ul>
 </section>
@@ -88,26 +88,26 @@ button { font: inherit; justify-self: start; padding: 6px 12px; border-radius: 4
 
 <section>
   <h2>Reported to ÖRAG</h2>
-  <p>Service request 182177, since 08.10.2026. The poll results were added on 11.10.2026. <b>No answer yet.</b></p>
+  <p>Service request 182177, since 08.10.2026. The poll results were added on 11.10.2026. On 13.10.2026 ÖRAG answered that they have sent their specialist company to check it. We asked that the check covers the central heating settings, not only single flats.</p>
   <p class="muted">The building was finished in 2023. Under Austrian law the warranty for defects in buildings is 3 years (§ 933 ABGB), so if the cause turns out to be in the construction, it should be raised within that period.</p>
 </section>
 
 <section>
   <h2>How to help</h2>
   <p>The more flats report it, the sooner ÖRAG has the system checked. Open <a href="https://oerag.idwell.com/requests" target="_blank" rel="noopener">oerag.idwell.com/requests</a> → "Servicemeldung erstellen" → Mängel → Einheit → Heizung / Klima / Lüftung → Fußbodenheizung, and paste this. Keep it short; the portal rejects long descriptions.</p>
-  <pre id="tpl">Titel: Wohnung zu warm, nicht regelbar
+  <pre id="tpl">Titel: Wohnung zu warm, Heizung prüfen
 
-Beschreibung: Meine Wohnung (Top [Nr.]) hat ca. [XX] °C, auch nachts. Es gibt keinen Raumthermostat, die Temperatur ist nicht regelbar. Bitte die Heizungsanlage des Gebäudes prüfen, siehe auch Servicemeldung 182177.</pre>
+Beschreibung: Meine Wohnung (Top [Nr.]) hat ca. [XX] °C, auch nachts, obwohl der Raumthermostat niedrig eingestellt ist. Bitte die Heizungsanlage des Gebäudes prüfen, siehe auch Servicemeldung 182177.</pre>
   <button type="button" id="copy">Copy text</button>
   <p class="muted">No portal account? Send it to immobilienverwaltung@oerag.at.</p>
 </section>
 
-<footer class="muted">Source: WhatsApp poll of the residents, 11.10.2026.</footer>
+<footer class="muted">Source: WhatsApp poll of the residents, 11–13.10.2026.</footer>
 
 </main>
 <script>
-const poll = [["Under 21 °C", 0], ["21–23 °C", 7], ["23–25 °C", 10], ["Over 25 °C", 22], ["Too warm, no thermometer", 15], ["Fine for me", 0]];
-document.getElementById("poll").innerHTML = poll.map(([l, v]) => `<tr><td>${l}</td><td class="n">${v}</td><td class="n">${Math.round(v / 54 * 100)}%</td></tr>`).join("");
+const poll = [["Under 21 °C", 0], ["21–23 °C", 7], ["23–25 °C", 10], ["Over 25 °C", 25], ["Too warm, no thermometer", 16], ["Fine for me", 0]];
+document.getElementById("poll").innerHTML = poll.map(([l, v]) => `<tr><td>${l}</td><td class="n">${v}</td><td class="n">${Math.round(v / 58 * 100)}%</td></tr>`).join("");
 document.getElementById("copy").addEventListener("click", e => {
   const btn = e.currentTarget, pre = document.getElementById("tpl");
   navigator.clipboard.writeText(pre.textContent).then(() => { btn.textContent = "Copied"; setTimeout(() => btn.textContent = "Copy text", 2000); })
